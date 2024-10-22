@@ -23,7 +23,7 @@ while True:
     
 #make sure inputs are valid
     except:
-       print("Invalid age, try again.")
+       print("Invalid input, try again.")
      
 #ask user if he wants to input another
     another_person = input("Do you want to add another person? Yes/No?: ")
