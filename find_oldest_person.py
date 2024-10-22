@@ -9,6 +9,9 @@ while True:
     try:
      name = input("Input name please: ")
      age = int(input("Input age please: "))
+     if age < 0:
+            print("Age cannot be negative. Please try again.")
+            continue
 
 #store inputs on array(dictionary)
      people_name_and_age[name] = age
