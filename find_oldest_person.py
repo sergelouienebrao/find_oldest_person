@@ -8,6 +8,10 @@ person= ""
 while True:
     try:
      name = input("Input name please: ")
+     if not name or not name.isalpha():  # Check if name is empty or contains non-alphabetic characters
+            print("Name should only be letters and cannot be empty. Please enter a valid name.")
+            continue
+     
      age = int(input("Input age please: "))
      if age < 0:
             print("Age cannot be negative. Please try again.")
