@@ -6,21 +6,15 @@ people_name_and_age = {}
 #ask for name and age inputs
 while True:
     try: 
-        name = input("Input name please: ")
-        age = int(input("Input age please: "))
+     name = input("Input name please: ")
+     age = int(input("Input age please: "))
+#store inputs on array(dictionary)
+     people_name_and_age[name] = age
+
+     print(f"Name: {name}, Age: {age}")
 #make sure inputs are valid
     except:
-        print("Invalid input, try again.")
-       
-
-#store inputs on array(dictionary)
-    people_name_and_age[name] = {
-            "name" : name,
-            "age" : age
-        }
-
-    print(people_name_and_age[name]["name"])
-    print(people_name_and_age[name]["age"])
+     print("Invalid input, try again.")
 
 #ask user if he wants to input another 
 
