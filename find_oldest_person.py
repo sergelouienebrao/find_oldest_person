@@ -15,9 +15,11 @@ while True:
 
 #store inputs on array(dictionary)
     people_name_and_age[name] = {
+            "name" : name,
             "age" : age
         }
 
+    print(people_name_and_age[name]["name"])
     print(people_name_and_age[name]["age"])
 
 #ask user if he wants to input another 
